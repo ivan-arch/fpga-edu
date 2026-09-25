@@ -13,18 +13,16 @@ module lock_controller #(
         output logic unlocked_led
     );
 
-logic [3:0] digit_clean;
-logic digit_is_valid;
+logic [3:0] digit_clean, digit_clean_prev;
 
-lock_debouncer #(
+debouncer #(
     .BUS_WIDTH(4),
-    .MAX_COUNT(DEBOUNCE_TICKS),
-    .NOT_PRESSED(NOT_PRESSED)
+    .DEBOUNCE_TICKS(DEBOUNCE_TICKS)
     ) debouncer (
+  .rst(rst),
   .clk(clk), 
   .digit_raw(digit_in),
-  .digit_clean(digit_clean),
-  .digit_is_valid(digit_is_valid)
+  .digit_clean(digit_clean)
 );
 
 state_t state, next_state;
@@ -36,22 +34,29 @@ always_ff @(posedge clk or posedge rst) begin
         state <= next_state;
 end
 
+always_ff @(posedge clk or posedge rst) begin
+    if(rst)
+        digit_clean_prev <= 0;
+    else
+        digit_clean_prev <= digit_clean;
+end
+
 always_comb begin
     next_state = state;
     case (state)
         LOCKED:
-            if(digit_is_valid)
+            if(digit_is_new && (digit_clean != NOT_PRESSED))
                 next_state = (digit_clean == D1) ? WAIT_D2 : LOCKED;
             else
                 next_state = state;
         WAIT_D2:
-            if(digit_is_valid)
+            if(digit_is_new && (digit_clean != NOT_PRESSED))
                 next_state = (digit_clean == D2) ? WAIT_D3 : LOCKED;
             else
                 next_state = state;
         WAIT_D3:
-           if(digit_is_valid)
-                next_state = (digit_clean == D3) ? UNLOCKED : LOCKED;
+           if(digit_is_new && (digit_clean != NOT_PRESSED))
+                 next_state = (digit_clean == D3) ? UNLOCKED : LOCKED;
             else
                 next_state = state;
         UNLOCKED:
@@ -62,5 +67,6 @@ always_comb begin
 end
 
 assign unlocked_led = (state == UNLOCKED);
+assign digit_is_new = digit_clean_prev != digit_clean;
 
 endmodule

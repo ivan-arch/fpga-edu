@@ -8,7 +8,7 @@ module lock_controller_tb;
     logic [3:0] digit_in;
     logic unlocked_led;
     
-    localparam integer DEBOUNCE_TICKS = 2;
+    localparam integer DEBOUNCE_TICKS = 10;
     localparam logic [3:0] NOT_PRESSED = 4'd0;
     localparam logic [3:0] D1 = 4'd1;
     localparam logic [3:0] D2 = 4'd3;
@@ -59,8 +59,7 @@ module lock_controller_tb;
     always #5 clk = ~clk;
     
     initial begin
-        rst = 1; @(posedge clk); #1; 
-        rst = 0;
+        rst = 1; @(posedge clk); #1; rst = 0;
         check_state("Locked after reset", LOCKED, 1'b0);
             
         check_transition("Set correct 1st digit", D1, WAIT_D2, 1'b0);
@@ -70,15 +69,13 @@ module lock_controller_tb;
         repeat(DEBOUNCE_TICKS + 2) @(posedge clk); #1;
         check_state("Remains unlocked", UNLOCKED, 1'b1);
    
-        digit_in = NOT_PRESSED;
-        repeat(DEBOUNCE_TICKS + 2) @(posedge clk); #1;
-        check_state("Ignores not pressed", UNLOCKED, 1'b1);
+        check_transition("Ignores not pressed", NOT_PRESSED, UNLOCKED, 1'b1);
    
-        rst = 1; @(posedge clk); #1;    
-        rst = 0;
+        rst = 1; @(posedge clk); #1; rst = 0;
         check_state("Locked after reset", LOCKED, 1'b0);
       
         check_transition("Set correct 1st digit", D1, WAIT_D2, 1'b0);
+        check_transition("Ignores not pressed", NOT_PRESSED, WAIT_D2, 1'b0);
         check_transition("Set wrong 2nd digit", WRONG, LOCKED, 1'b0);    
         
         $finish;
