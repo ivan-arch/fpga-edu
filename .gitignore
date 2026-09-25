@@ -1,0 +1,10 @@
+*
+!**/
+
+!.gitignore
+
+!*.png
+!*.md
+
+!*.xpr
+!*.sv
