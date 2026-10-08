@@ -1,0 +1,12 @@
+axi_dma_0:
+- axi_dma
+- axidma
+axi_full_bram_0:
+- axi_full_bram
+- None
+axi_gpio_0:
+- axi_gpio
+- gpio
+microblaze_0_local_memory_dlmb_bram_if_cntlr:
+- lmb_bram_if_cntlr
+- bram
