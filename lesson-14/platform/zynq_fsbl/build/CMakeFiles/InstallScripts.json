@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/work/edu/my/FPGA/lesson-14/platform/zynq_fsbl/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
