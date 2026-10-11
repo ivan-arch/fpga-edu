@@ -1,0 +1,4 @@
+C:/work/edu/my/blinking_diod_platform/blinking_diod_platform/zynq_fsbl/build/CMakeFiles/fsbl.elf.dir
+C:/work/edu/my/blinking_diod_platform/blinking_diod_platform/zynq_fsbl/build/CMakeFiles/print_build_info.dir
+C:/work/edu/my/blinking_diod_platform/blinking_diod_platform/zynq_fsbl/build/CMakeFiles/edit_cache.dir
+C:/work/edu/my/blinking_diod_platform/blinking_diod_platform/zynq_fsbl/build/CMakeFiles/rebuild_cache.dir
