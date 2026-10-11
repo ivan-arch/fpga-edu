@@ -1,15 +1,11 @@
-set(ps7_ddr_0_memory_0 "0x100000;0x1ff00000")
-set(ps7_ram_0_memory_0 "0x0;0x30000")
-set(ps7_ram_1_memory_1 "0xffff0000;0xfe00")
-set(DDR ps7_ddr_0_memory_0)
-set(CODE ps7_ddr_0_memory_0)
-set(DATA ps7_ddr_0_memory_0)
-set(TOTAL_MEM_CONTROLLERS "ps7_ddr_0_memory_0;ps7_ram_0_memory_0;ps7_ram_1_memory_1")
+set(microblaze_0_local_memory_dlmb_bram_if_cntlr_memory_0 "0x50;0xffb0")
+set(DDR microblaze_0_local_memory_dlmb_bram_if_cntlr_memory_0)
+set(CODE microblaze_0_local_memory_dlmb_bram_if_cntlr_memory_0)
+set(DATA microblaze_0_local_memory_dlmb_bram_if_cntlr_memory_0)
+set(TOTAL_MEM_CONTROLLERS "microblaze_0_local_memory_dlmb_bram_if_cntlr_memory_0")
 set(MEMORY_SECTION "MEMORY
 {
-	ps7_ddr_0_memory_0 : ORIGIN = 0x100000, LENGTH = 0x1ff00000
-	ps7_ram_0_memory_0 : ORIGIN = 0x0, LENGTH = 0x30000
-	ps7_ram_1_memory_1 : ORIGIN = 0xffff0000, LENGTH = 0xfe00
+	microblaze_0_local_memory_dlmb_bram_if_cntlr_memory_0 : ORIGIN = 0x50, LENGTH = 0xffb0
 }")
-set(STACK_SIZE 0x2000)
-set(HEAP_SIZE 0x2000)
+set(STACK_SIZE 0x400)
+set(HEAP_SIZE 0x800)

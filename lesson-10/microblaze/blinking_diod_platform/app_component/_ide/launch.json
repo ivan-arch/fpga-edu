@@ -22,29 +22,29 @@
         "resetSystem": true,
         "programDevice": true,
         "partialBitstream": false,
-        "skipRevisionCheck": true,
+        "skipRevisionCheck": false,
         "device": {
           "plDevice": "Auto Detect",
           "psDevice": "Auto Detect"
         },
         "resetAPU": false,
-        "bitstreamFile": "${workspaceFolder}\\app_component\\_ide\\bitstream\\design_1_wrapper.bit",
+        "bitstreamFile": "",
         "zynqInitialization": {
           "isFsbl": false,
           "usingFSBL": {
             "initWithFSBL": true,
-            "fsblFile": "${workspaceFolder}\\blinking_diod_platform\\export\\blinking_diod_platform\\sw\\boot\\fsbl.elf",
+            "fsblFile": "${workspaceFolder}\\platform\\export\\platform\\sw\\boot\\fsbl.elf",
             "fsblExitSymbol": "FsblHandoffJtagExit"
           },
           "usingPs7Init": {
             "runPs7Init": true,
             "runPs7PostInit": true,
-            "ps7InitTclFile": "${workspaceFolder}\\app_component\\_ide\\psinit\\ps7_init.tcl"
+            "ps7InitTclFile": ""
           }
         },
         "downloadElf": [
           {
-            "core": "ps7_cortexa9_0",
+            "core": "microblaze_0",
             "resetProcessor": true,
             "elfFile": "${workspaceFolder}\\app_component\\build\\app_component.elf",
             "stopAtEntry": false,

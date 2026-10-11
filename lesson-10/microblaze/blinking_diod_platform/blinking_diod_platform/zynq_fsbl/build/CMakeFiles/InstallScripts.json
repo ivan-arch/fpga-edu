@@ -1,7 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"C:/work/edu/my/blinking_diod_platform/blinking_diod_platform/zynq_fsbl/build/cmake_install.cmake"
-	],
-	"Parallel" : false
-}

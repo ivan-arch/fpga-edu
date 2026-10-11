@@ -1,8 +1,8 @@
 [
-{
-  "directory": "C:/work/edu/my/blinking_diod_platform/app_component/build",
-  "command": "C:\\AMDDesignTools\\2026.1\\Vitis\\gnu\\aarch32\\nt\\gcc-arm-none-eabi\\bin\\arm-none-eabi-gcc.exe -IC:/work/edu/my/blinking_diod_platform/app_component/src -isystem C:/work/edu/my/blinking_diod_platform/blinking_diod_platform/export/blinking_diod_platform/sw/standalone_ps7_cortexa9_0/include -isystem C:/AMDDesignTools/2026.1/gnu/aarch32/nt/gcc-arm-none-eabi/x86_64-oesdk-mingw32/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.4.0/include -isystem C:/AMDDesignTools/2026.1/gnu/aarch32/nt/gcc-arm-none-eabi/x86_64-oesdk-mingw32/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.4.0/include-fixed -isystem C:/AMDDesignTools/2026.1/Vitis/gnu/aarch32/nt/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include  -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=C:/work/edu/my/blinking_diod_platform/blinking_diod_platform/export/blinking_diod_platform/sw/standalone_ps7_cortexa9_0/Xilinx.spec -IC:/work/edu/my/blinking_diod_platform/blinking_diod_platform/export/blinking_diod_platform/sw/standalone_ps7_cortexa9_0/include -Wall -Wextra      -O0  -g3     -U__clang__ -o CMakeFiles\\app_component.elf.dir\\main.c.obj -c C:\\work\\edu\\my\\blinking_diod_platform\\app_component\\src\\main.c",
-  "file": "C:\\work\\edu\\my\\blinking_diod_platform\\app_component\\src\\main.c",
-  "output": "CMakeFiles\\app_component.elf.dir\\main.c.obj"
-}
+  {
+    "directory": "C:/work/edu/my/FPGA/lesson-10/microblaze/blinking_diod_platform/app_component/build",
+    "file": "C:\\work\\edu\\my\\FPGA\\lesson-10\\microblaze\\blinking_diod_platform\\app_component\\src\\main.c",
+    "output": "CMakeFiles\\app_component.elf.dir\\main.c.obj",
+    "command": "C:\\AMDDesignTools\\2026.1\\Vitis\\gnu\\microblaze\\nt\\bin\\mb-gcc.exe -IC:/work/edu/my/FPGA/lesson-10/microblaze/blinking_diod_platform/app_component/src -isystem C:/work/edu/my/FPGA/lesson-10/microblaze/blinking_diod_platform/platform/export/platform/sw/standalone_microblaze_0/include -isystem C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/include -isystem C:/AMDDesignTools/2026.1/gnu/microblaze/nt/x86_64-oesdk-mingw32/usr/lib/microblaze-xilinx-elf/gcc/microblaze-xilinx-elf/13.4.0/include-fixed -isystem C:/AMDDesignTools/2026.1/Vitis/gnu/microblaze/nt/microblazeeb-xilinx-elf/usr/include   -mlittle-endian -mxl-soft-mul -mcpu\u003dv11.0 -DSDT  -MMD -MP -specs\u003dC:/work/edu/my/FPGA/lesson-10/microblaze/blinking_diod_platform/platform/export/platform/sw/standalone_microblaze_0/Xilinx.spec -IC:/work/edu/my/FPGA/lesson-10/microblaze/blinking_diod_platform/platform/export/platform/sw/standalone_microblaze_0/include -Wall -Wextra      -O0  -g3     -U__clang__ -o CMakeFiles\\app_component.elf.dir\\main.c.obj -c C:\\work\\edu\\my\\FPGA\\lesson-10\\microblaze\\blinking_diod_platform\\app_component\\src\\main.c -D__MICROBLAZE__"
+  }
 ]
