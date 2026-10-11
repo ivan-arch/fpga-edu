@@ -14,7 +14,8 @@
       "processing_system7_0": "",
       "axi_gpio_0": "",
       "axi_smc": "",
-      "rst_ps7_0_50M": ""
+      "rst_ps7_0_50M": "",
+      "axi_timer_0": ""
     },
     "interface_ports": {
       "led": {
@@ -243,6 +244,9 @@
           },
           "PCW_I2C_RESET_ENABLE": {
             "value": "0"
+          },
+          "PCW_IRQ_F2P_INTR": {
+            "value": "1"
           },
           "PCW_MIO_0_IOTYPE": {
             "value": "LVCMOS 3.3V"
@@ -726,6 +730,9 @@
           },
           "PCW_USB_RESET_ENABLE": {
             "value": "0"
+          },
+          "PCW_USE_FABRIC_INTERRUPT": {
+            "value": "1"
           }
         },
         "interface_ports": {
@@ -895,6 +902,9 @@
         "inst_hier_path": "axi_smc",
         "has_run_ip_tcl": "true",
         "parameters": {
+          "NUM_MI": {
+            "value": "2"
+          },
           "NUM_SI": {
             "value": "1"
           }
@@ -905,11 +915,12 @@
             "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
             "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
             "bridges": [
-              "M00_AXI"
+              "M00_AXI",
+              "M01_AXI"
             ],
             "bd_attributes": {
               "BRIDGES": {
-                "value": "M00_AXI",
+                "value": "M00_AXI:M01_AXI",
                 "value_src": "auto"
               },
               "TYPE": {
@@ -919,6 +930,17 @@
             }
           },
           "M00_AXI": {
+            "mode": "Master",
+            "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+            "bd_attributes": {
+              "TYPE": {
+                "value": "interior",
+                "value_src": "default"
+              }
+            }
+          },
+          "M01_AXI": {
             "mode": "Master",
             "vlnv_bus_definition": "xilinx.com:interface:aximm:1.0",
             "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
@@ -938,6 +960,14 @@
         "xci_path": "ip\\design_1_rst_ps7_0_50M_0\\design_1_rst_ps7_0_50M_0.xci",
         "inst_hier_path": "rst_ps7_0_50M",
         "has_run_ip_tcl": "true"
+      },
+      "axi_timer_0": {
+        "vlnv": "xilinx.com:ip:axi_timer:2.0",
+        "ip_revision": "38",
+        "xci_name": "design_1_axi_timer_0_0",
+        "xci_path": "ip\\design_1_axi_timer_0_0\\design_1_axi_timer_0_0.xci",
+        "inst_hier_path": "axi_timer_0",
+        "has_run_ip_tcl": "true"
       }
     },
     "interface_nets": {
@@ -951,6 +981,12 @@
         "interface_ports": [
           "axi_smc/M00_AXI",
           "axi_gpio_0/S_AXI"
+        ]
+      },
+      "axi_smc_M01_AXI": {
+        "interface_ports": [
+          "axi_smc/M01_AXI",
+          "axi_timer_0/S_AXI"
         ]
       },
       "processing_system7_0_DDR": {
@@ -973,13 +1009,20 @@
       }
     },
     "nets": {
+      "axi_timer_0_interrupt": {
+        "ports": [
+          "axi_timer_0/interrupt",
+          "processing_system7_0/IRQ_F2P"
+        ]
+      },
       "processing_system7_0_FCLK_CLK0": {
         "ports": [
           "processing_system7_0/FCLK_CLK0",
           "processing_system7_0/M_AXI_GP0_ACLK",
           "axi_smc/aclk",
           "axi_gpio_0/s_axi_aclk",
-          "rst_ps7_0_50M/slowest_sync_clk"
+          "rst_ps7_0_50M/slowest_sync_clk",
+          "axi_timer_0/s_axi_aclk"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {
@@ -992,7 +1035,8 @@
         "ports": [
           "rst_ps7_0_50M/peripheral_aresetn",
           "axi_gpio_0/s_axi_aresetn",
-          "axi_smc/aresetn"
+          "axi_smc/aresetn",
+          "axi_timer_0/s_axi_aresetn"
         ]
       }
     },
@@ -1004,6 +1048,11 @@
               "SEG_axi_gpio_0_Reg": {
                 "address_block": "/axi_gpio_0/S_AXI/Reg",
                 "offset": "0x41200000",
+                "range": "64K"
+              },
+              "SEG_axi_timer_0_Reg": {
+                "address_block": "/axi_timer_0/S_AXI/Reg",
+                "offset": "0x42800000",
                 "range": "64K"
               }
             }

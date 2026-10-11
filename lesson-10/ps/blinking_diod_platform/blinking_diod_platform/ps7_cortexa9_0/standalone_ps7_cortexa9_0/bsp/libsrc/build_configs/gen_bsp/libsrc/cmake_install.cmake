@@ -1,4 +1,4 @@
-# Install script for directory: C:/work/edu/my/blinking_diod_platform/blinking_diod_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc
+# Install script for directory: C:/work/edu/my/FPGA/lesson-10/ps/blinking_diod_platform/blinking_diod_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,69 +39,74 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/work/edu/my/blinking_diod_platform/blinking_diod_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/common/src/cmake_install.cmake")
+  include("C:/work/edu/my/FPGA/lesson-10/ps/blinking_diod_platform/blinking_diod_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/common/src/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/work/edu/my/blinking_diod_platform/blinking_diod_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/coresightps_dcc/src/cmake_install.cmake")
+  include("C:/work/edu/my/FPGA/lesson-10/ps/blinking_diod_platform/blinking_diod_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/coresightps_dcc/src/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/work/edu/my/blinking_diod_platform/blinking_diod_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/devcfg/src/cmake_install.cmake")
+  include("C:/work/edu/my/FPGA/lesson-10/ps/blinking_diod_platform/blinking_diod_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/devcfg/src/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/work/edu/my/blinking_diod_platform/blinking_diod_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/dmaps/src/cmake_install.cmake")
+  include("C:/work/edu/my/FPGA/lesson-10/ps/blinking_diod_platform/blinking_diod_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/dmaps/src/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/work/edu/my/blinking_diod_platform/blinking_diod_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/gpio/src/cmake_install.cmake")
+  include("C:/work/edu/my/FPGA/lesson-10/ps/blinking_diod_platform/blinking_diod_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/gpio/src/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/work/edu/my/blinking_diod_platform/blinking_diod_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/gpiops/src/cmake_install.cmake")
+  include("C:/work/edu/my/FPGA/lesson-10/ps/blinking_diod_platform/blinking_diod_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/gpiops/src/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/work/edu/my/blinking_diod_platform/blinking_diod_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/scugic/src/cmake_install.cmake")
+  include("C:/work/edu/my/FPGA/lesson-10/ps/blinking_diod_platform/blinking_diod_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/scugic/src/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/work/edu/my/blinking_diod_platform/blinking_diod_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/scutimer/src/cmake_install.cmake")
+  include("C:/work/edu/my/FPGA/lesson-10/ps/blinking_diod_platform/blinking_diod_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/scutimer/src/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/work/edu/my/blinking_diod_platform/blinking_diod_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/scuwdt/src/cmake_install.cmake")
+  include("C:/work/edu/my/FPGA/lesson-10/ps/blinking_diod_platform/blinking_diod_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/scuwdt/src/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/work/edu/my/blinking_diod_platform/blinking_diod_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xadcps/src/cmake_install.cmake")
+  include("C:/work/edu/my/FPGA/lesson-10/ps/blinking_diod_platform/blinking_diod_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/tmrctr/src/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/work/edu/my/FPGA/lesson-10/ps/blinking_diod_platform/blinking_diod_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xadcps/src/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "C:/work/edu/my/blinking_diod_platform/blinking_diod_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/")
+   "C:/work/edu/my/FPGA/lesson-10/ps/blinking_diod_platform/blinking_diod_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include/")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "C:/work/edu/my/blinking_diod_platform/blinking_diod_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include" TYPE DIRECTORY MESSAGE_LAZY FILES "C:/work/edu/my/blinking_diod_platform/blinking_diod_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/include/")
+  file(INSTALL DESTINATION "C:/work/edu/my/FPGA/lesson-10/ps/blinking_diod_platform/blinking_diod_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/include" TYPE DIRECTORY MESSAGE_LAZY FILES "C:/work/edu/my/FPGA/lesson-10/ps/blinking_diod_platform/blinking_diod_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/include/")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "C:/work/edu/my/blinking_diod_platform/blinking_diod_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/install_local_manifest.txt"
+  file(WRITE "C:/work/edu/my/FPGA/lesson-10/ps/blinking_diod_platform/blinking_diod_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

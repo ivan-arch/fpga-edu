@@ -52,7 +52,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = C:\AMDDesignTools\2026.1\Vitis\tps\win64\cmake-4.0.1\bin\cmake.exe --regenerate-during-build -SC:\work\edu\my\blinking_diod_platform\blinking_diod_platform\zynq_fsbl -BC:\work\edu\my\blinking_diod_platform\blinking_diod_platform\zynq_fsbl\build
+  command = C:\AMDDesignTools\2026.1\Vitis\tps\win64\cmake-4.0.1\bin\cmake.exe --regenerate-during-build -SC:\work\edu\my\FPGA\lesson-10\ps\blinking_diod_platform\blinking_diod_platform\zynq_fsbl -BC:\work\edu\my\FPGA\lesson-10\ps\blinking_diod_platform\blinking_diod_platform\zynq_fsbl\build
   description = Re-running CMake...
   generator = 1
 

@@ -1,6 +1,6 @@
 sdt: hw_artifacts/ps7_cortexa9_0_baremetal.dts
 family: Zynq
-path: C:/work/edu/my/blinking_diod_platform/blinking_diod_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp
+path: C:/work/edu/my/FPGA/lesson-10/ps/blinking_diod_platform/blinking_diod_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp
 config: None
 os: standalone
 os_info:
@@ -154,6 +154,10 @@ drv_info:
     driver: gpio
     ip_name: axi_gpio
     path: C:\AMDDesignTools\2026.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\gpio_v4_13
+  axi_timer_0:
+    driver: tmrctr
+    ip_name: axi_timer
+    path: C:\AMDDesignTools\2026.1\Vitis\data\embeddedsw\XilinxProcessorIPLib\drivers\tmrctr_v4_15
   ps7_afi_0: None
   ps7_afi_1: None
   ps7_afi_2: None
@@ -220,10 +224,11 @@ lib_config:
       name: XILTIMER_sleep_timer
       permission: read_write
       type: string
-      value: Default;
-      default: Default;
+      value: ps7_scutimer_0
+      default: Default
       options:
       - Default
+      - axi_timer_0
       - ps7_scutimer_0
       description: This parameter is used to select specific timer for sleep functionality
     XILTIMER_tick_timer:
@@ -234,5 +239,6 @@ lib_config:
       default: None
       options:
       - None
+      - axi_timer_0
       - ps7_scutimer_0
       description: This parameter is used to select specific timer for tick functionality

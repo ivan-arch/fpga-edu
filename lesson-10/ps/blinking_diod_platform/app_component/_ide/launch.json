@@ -22,7 +22,7 @@
         "resetSystem": true,
         "programDevice": true,
         "partialBitstream": false,
-        "skipRevisionCheck": true,
+        "skipRevisionCheck": false,
         "device": {
           "plDevice": "Auto Detect",
           "psDevice": "Auto Detect"
@@ -33,7 +33,7 @@
           "isFsbl": false,
           "usingFSBL": {
             "initWithFSBL": true,
-            "fsblFile": "${workspaceFolder}\\blinking_diod_platform\\export\\blinking_diod_platform\\sw\\boot\\fsbl.elf",
+            "fsblFile": "c:\\work\\edu\\my\\FPGA\\lesson-10\\ps\\blinking_diod_platform\\blinking_diod_platform\\export\\blinking_diod_platform\\sw\\boot\\fsbl.elf",
             "fsblExitSymbol": "FsblHandoffJtagExit"
           },
           "usingPs7Init": {

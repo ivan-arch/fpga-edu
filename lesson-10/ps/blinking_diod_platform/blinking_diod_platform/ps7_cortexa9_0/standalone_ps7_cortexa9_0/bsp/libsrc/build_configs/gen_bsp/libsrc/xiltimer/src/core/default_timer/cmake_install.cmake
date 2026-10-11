@@ -1,4 +1,4 @@
-# Install script for directory: C:/work/edu/my/blinking_diod_platform/blinking_diod_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/xiltimer/src/core/default_timer
+# Install script for directory: C:/work/edu/my/FPGA/lesson-10/ps/blinking_diod_platform/blinking_diod_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/xiltimer/src/core/default_timer
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,6 +40,6 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "C:/work/edu/my/blinking_diod_platform/blinking_diod_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/core/default_timer/install_local_manifest.txt"
+  file(WRITE "C:/work/edu/my/FPGA/lesson-10/ps/blinking_diod_platform/blinking_diod_platform/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/xiltimer/src/core/default_timer/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
