@@ -75,3 +75,5 @@ comp.run(operation="CO_SIMULATION")
 
 comp.run(operation="PACKAGE")
 
+vitis.dispose()
+
