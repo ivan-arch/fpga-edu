@@ -1,0 +1,227 @@
+<ENTRY>
+{
+ "thisFile": "C:/work\\edu\\my\\FPGA\\lesson-15\\moving_max\\hls_component\\hls_component\\hls_component.hlsrun_cosim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "10/14/26 14:48:38",
+ "timestampMillis": "1791978518585",
+ "buildStep": {
+  "cmdId": "05e18999-23e2-4e04-82fc-573c6a682a92",
+  "name": "vitis-run",
+  "logFile": "C:/work\\edu\\my\\FPGA\\lesson-15\\moving_max\\hls_component\\hls_component\\logs\\hls_component.steps.log",
+  "commandLine": "C:/AMDDesignTools/2026.1/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --cosim --config C:\\work\\edu\\my\\FPGA\\lesson-15\\moving_max\\hls_component\\hls_config.cfg --work_dir hls_component ",
+  "args": [
+   "--mode",
+   "hls",
+   "--cosim",
+   "--config",
+   "C:\\work\\edu\\my\\FPGA\\lesson-15\\moving_max\\hls_component\\hls_config.cfg",
+   "--work_dir",
+   "hls_component"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\work\\edu\\my\\FPGA\\lesson-15\\moving_max\\hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/14/26 14:48:38",
+ "timestampMillis": "1791978518585",
+ "status": {
+  "cmdId": "05e18999-23e2-4e04-82fc-573c6a682a92",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "10/14/26 14:48:43",
+ "timestampMillis": "1791978523423",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_RTL_COSIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "moving_max",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/work\\edu\\my\\FPGA\\lesson-15\\moving_max\\hls_component\\moving_max.cpp",
+     "C:/work\\edu\\my\\FPGA\\lesson-15\\moving_max\\hls_component\\moving_max.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2026.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "10/14/26 14:48:43",
+ "timestampMillis": "1791978523424",
+ "buildStep": {
+  "cmdId": "f72477eb-048f-439d-b268-722515eba5f5",
+  "name": "",
+  "logFile": "C:/work\\edu\\my\\FPGA\\lesson-15\\moving_max\\hls_component\\hls_component\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\work\\edu\\my\\FPGA\\lesson-15\\moving_max\\hls_component"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/14/26 14:48:43",
+ "timestampMillis": "1791978523425",
+ "status": {
+  "cmdId": "f72477eb-048f-439d-b268-722515eba5f5",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/14/26 14:48:43",
+ "timestampMillis": "1791978523425",
+ "report": {
+  "path": "C:/work\\edu\\my\\FPGA\\lesson-15\\moving_max\\hls_component\\hls_component\\hls\\sim\\report\\moving_max_cosim.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_COSIMULATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/14/26 14:48:43",
+ "timestampMillis": "1791978523425",
+ "report": {
+  "path": "C:/work\\edu\\my\\FPGA\\lesson-15\\moving_max\\hls_component\\hls_component\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/14/26 14:48:43",
+ "timestampMillis": "1791978523425",
+ "report": {
+  "path": "C:/work\\edu\\my\\FPGA\\lesson-15\\moving_max\\hls_component\\hls_component\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH_COSIM",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/14/26 14:48:43",
+ "timestampMillis": "1791978523426",
+ "report": {
+  "path": "C:/work\\edu\\my\\FPGA\\lesson-15\\moving_max\\hls_component\\hls_component\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_TIMELINE_TRACE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/14/26 14:48:43",
+ "timestampMillis": "1791978523426",
+ "report": {
+  "path": "C:/work\\edu\\my\\FPGA\\lesson-15\\moving_max\\hls_component\\hls_component\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_WAVE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/14/26 14:50:11",
+ "timestampMillis": "1791978611238",
+ "status": {
+  "cmdId": "f72477eb-048f-439d-b268-722515eba5f5",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "10/14/26 14:50:11",
+ "timestampMillis": "1791978611413",
+ "status": {
+  "cmdId": "05e18999-23e2-4e04-82fc-573c6a682a92",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/14/26 14:50:11",
+ "timestampMillis": "1791978611415",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "10/14/26 14:50:11",
+ "timestampMillis": "1791978611415",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

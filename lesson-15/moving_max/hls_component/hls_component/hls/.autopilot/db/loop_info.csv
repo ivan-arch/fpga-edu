@@ -1,0 +1,4 @@
+,INIT_LOOP,seq_loop_status1.csv
+,SHIFT_LOOP,seq_loop_status2.csv
+,MAX_LOOP,seq_loop_status3.csv
+,MAIN_LOOP,seq_loop_status4.csv

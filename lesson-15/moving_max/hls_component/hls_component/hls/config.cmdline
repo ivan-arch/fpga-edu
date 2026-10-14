@@ -1,0 +1,3 @@
+relativeroot=C:/work/edu/my/FPGA/lesson-15/moving_max/hls_component
+original_argv=--mode hls --package --config C:\work\edu\my\FPGA\lesson-15\moving_max\hls_component\hls_config.cfg --work_dir hls_component 
+
